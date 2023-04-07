@@ -5,45 +5,31 @@ import { Link } from "react-router-dom";
 const orders = [
   {
     orderNumber: "12345",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    details: "Vegetables",
   },
   {
     orderNumber: "23456",
-    details:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    details: "Fruits",
   },
   {
     orderNumber: "34567",
-    details:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    details: "Vegetables",
   },
   {
     orderNumber: "12243",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    details: "Fruits",
   },
   {
     orderNumber: "23324",
-    details:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    details: "Vegetables",
   },
   {
     orderNumber: "86767",
-    details:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    details: "Fruits",
   },
   {
     orderNumber: "89790",
-    details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    orderNumber: "54333",
-    details:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  },
-  {
-    orderNumber: "35635",
-    details:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    details: "Vegetables",
   },
 ];
 
@@ -51,14 +37,24 @@ const QueuePage = () => {
   return (
     <div className="queue-page">
       <h1>Order Queue</h1>
+      <div className="order-row">
+        <div className="order-row-title">Order Number</div>
+        <div className="order-row-title">Items</div>
+        <div className="order-row-title">Buttons</div>
+      </div>
       <div className="orders-container">
         {orders.map((order) => (
           <div key={order.orderNumber} className="order-card">
             <h2>Order #{order.orderNumber}</h2>
             <p>{order.details}</p>
-            <Link to="/orderassign" className="update-button">
-              Assign
-            </Link>
+            <div className="btn">
+              <Link to="/orderassign" className="update-button">
+                Know More
+              </Link>
+              <Link to="/orderassign" className="update-button">
+                Assign
+              </Link>
+            </div>
           </div>
         ))}
       </div>

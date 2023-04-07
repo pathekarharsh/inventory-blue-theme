@@ -1,9 +1,11 @@
-.container {
+.container-main {
   display: flex;
+  flex-direction: column;
   height: 90vh;
-
   justify-content: center;
+  align-items: center;
 }
+
 
 .content {
   width: 80%;
@@ -11,9 +13,15 @@
 }
 
 .cards {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  z-index: 1;
 }
 
 .card {
@@ -21,34 +29,32 @@
   border-radius: 10px;
 }
 
-.card-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
-}
-
 .card-content {
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-between;
 }
 
 .card-title {
-  margin: 0;
+  margin-left: 1rem;
 }
 
 .card-quantity {
-  margin: 10px 0;
   color: #222;
 }
 
 .update-button {
-  padding: 0.5rem 0.3rem;
-  font-size: 0.8rem;
+  padding: 0.6rem 0.4rem;
+  font-size: 1rem;
   background-color: #222222;
   color: #fff;
   border: 1px solid #fff;
   font-weight: 600;
   cursor: pointer;
   border-radius: 5%;
+  text-decoration: none;
+  text-align: right;
 }
 
 .update-button:hover {
