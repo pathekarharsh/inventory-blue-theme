@@ -1,0 +1,51 @@
+import React from "react";
+import "./Sidebar.css";
+import { AiOutlineBars, AiOutlineSearch } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
+import { IoLogoCodepen } from "react-icons/io";
+import { Link } from "react-router-dom";
+
+function Sidebar() {
+  return (
+    <div className="main-container">
+      <div className="company-header">
+        <Link to="/" className="heading">
+          <h2>Groccery</h2>
+        </Link>
+        <IoLogoCodepen size={30} style={{ color: "white" }} />
+        <AiOutlineBars size={30} style={{ color: "white" }} />
+      </div>
+
+      <div className="search-bar">
+        <AiOutlineSearch size={25} style={{ color: "white" }} />
+        <input type="text" placeholder="Search" />
+      </div>
+      <div className="inventory-manager">
+        <button>
+          <BsFillPersonFill size={22} style={{ color: "white" }} />
+          <Link to="/" className="heading">
+            <h3>Inventory Manager</h3>
+          </Link>
+        </button>
+      </div>
+      <div className="inventory-manager">
+        <button>
+          <BsFillPersonFill size={22} style={{ color: "white" }} />
+          <Link to="/orderqueue" className="heading">
+            <h3>Order Queue</h3>
+          </Link>
+        </button>
+      </div>
+      <div className="inventory-manager">
+        <button>
+          <BsFillPersonFill size={22} style={{ color: "white" }} />
+          <Link to="/assignorder" className="heading">
+            <h3>Order Queue Assignment</h3>
+          </Link>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default Sidebar;

@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  height: 90vh;
+
+  justify-content: center;
+}
+
+.content {
+  width: 80%;
+  padding-top: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.card-quantity {
+  margin: 10px 0;
+  color: #222;
+}
+
+.update-button {
+  padding: 0.3rem 0.1rem;
+  font-size: 0.8rem;
+  background-color: #222222;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: transparent;
+  border: 1px solid #222;
+  color: #222;
+  transition: 0.2s;
+}
