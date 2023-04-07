@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../Sidebar";
-import NavBar from "./NavBar";
-import QueuePage from "./QueuePage";
+import NavBar from "../OrderQueue/NavBar";
+import AssignPage from "./AssignPage";
 
 const Queue = () => {
   return (
@@ -11,7 +11,7 @@ const Queue = () => {
       </div>
       <div className="main">
         <NavBar />
-        <QueuePage />
+        <AssignPage />
       </div>
     </div>
   );

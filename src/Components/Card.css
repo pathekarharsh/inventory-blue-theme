@@ -41,13 +41,14 @@
 }
 
 .update-button {
-  padding: 0.3rem 0.1rem;
+  padding: 0.5rem 0.3rem;
   font-size: 0.8rem;
   background-color: #222222;
   color: #fff;
   border: 1px solid #fff;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 5%;
 }
 
 .update-button:hover {

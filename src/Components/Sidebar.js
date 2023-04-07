@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import { AiOutlineBars, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineBars, AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoLogoCodepen } from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -30,17 +30,9 @@ function Sidebar() {
       </div>
       <div className="inventory-manager">
         <button>
-          <BsFillPersonFill size={22} style={{ color: "white" }} />
+          <AiOutlineShoppingCart size={22} style={{ color: "white" }} />
           <Link to="/orderqueue" className="heading">
             <h3>Order Queue</h3>
-          </Link>
-        </button>
-      </div>
-      <div className="inventory-manager">
-        <button>
-          <BsFillPersonFill size={22} style={{ color: "white" }} />
-          <Link to="/assignorder" className="heading">
-            <h3>Order Queue Assignment</h3>
           </Link>
         </button>
       </div>

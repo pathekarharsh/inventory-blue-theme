@@ -1,0 +1,49 @@
+.queue-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.queue-page h1 {
+  color: #fff;
+  margin: 0.5rem;
+}
+
+.orders-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.order-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+  z-index: 1;
+}
+.order-card h2 {
+  margin-bottom: 10px;
+}
+
+.assign-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.assign-container p {
+  margin-right: 10px;
+}
