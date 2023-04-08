@@ -15,7 +15,7 @@
   
   .agent-card {
     margin-bottom: 10px;
-    background-color: #fff;
+    background-color: #7cc257;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: row;
     padding: 10px;
-    color: #222;
+    color: #fff;
     justify-content: space-between;
   }
   
@@ -36,7 +36,7 @@
   .agent-info p {
     margin: 0;
     font-size: 1.2rem;
-    color: #888;
+    color: #fff;
     margin-bottom: 10px;
   }
   
