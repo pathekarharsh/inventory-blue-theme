@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="main-container">
+    <div className="container2">
       <div className="company-header">
         <Link to="/" className="heading">
           <h2>Groccery</h2>

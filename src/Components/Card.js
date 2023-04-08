@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
-const Card = ({ title, quantity, image }) => {
+const Card = ({ title, quantity }) => {
+  const [Quantity, setQuantity] = useState(quantity);
+
+  const increaseQuantity = () => {
+    setQuantity(parseInt(Quantity) + 1);
+  };
+
+  const decreaseQuantity = () => {
+    if (parseInt(Quantity) > 0) {
+      setQuantity(parseInt(Quantity) - 1);
+    }
+  };
+
   return (
     <div className="card">
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
-        <p className="card-quantity">{quantity}Kg in stock</p>
+        <div className="quantity-control">
+          <button className="quantity-button" onClick={decreaseQuantity}>-</button>
+          <p className="card-quantity">{Quantity}Kg in stock</p>
+          <button className="quantity-button" onClick={increaseQuantity}>+</button>
+        </div>
         <Link to="/Update" className="heading">
           <button className="update-button">Update Stock</button>
         </Link>
@@ -43,27 +59,27 @@ const cardsData = [
     quantity: "12",
   },
   {
-    id: 1,
+    id: 6,
     title: "Tomato",
     quantity: "10",
   },
   {
-    id: 2,
+    id: 7,
     title: "Potato",
     quantity: "30",
   },
   {
-    id: 3,
+    id: 8,
     title: "Apple",
     quantity: "5",
   },
   {
-    id: 4,
+    id: 9,
     title: "Onion",
     quantity: "15",
   },
   {
-    id: 5,
+    id: 10,
     title: "Carrot",
     quantity: "12",
   },
