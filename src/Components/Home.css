@@ -6,3 +6,9 @@
     color: #fff;
   
   }
+
+  @media only screen and (max-width: 768px) {
+    .C{
+      padding-top: 22rem;
+    }
+  }

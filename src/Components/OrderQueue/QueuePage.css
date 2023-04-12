@@ -80,3 +80,60 @@
   text-align: right;
   margin-right: 1rem;
 }
+
+/* For screens smaller than 768px (mobile screens) */
+
+@media (max-width: 767px) {
+
+/* Styles for mobile screens */
+
+.order-row {
+  display: none;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.order-card h2 {
+  margin: 0.5rem;
+}
+
+.order-card p {
+  margin: 0.5rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.update-button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #4f80bc;
+}
+
+  
+}
