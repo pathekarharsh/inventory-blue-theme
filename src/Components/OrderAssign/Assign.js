@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../Sidebar";
-import NavBar from "../OrderQueue/NavBar";
+import AssignBar from "./AssignBar";
 import AssignPage from "./AssignPage";
 
 const Queue = () => {
@@ -10,7 +10,7 @@ const Queue = () => {
         <Sidebar />
       </div>
       <div className="main">
-        <NavBar />
+        <AssignBar />
         <AssignPage />
       </div>
     </div>

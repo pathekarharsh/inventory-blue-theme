@@ -2,7 +2,11 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
-    color: #fff;
+    color: #222;
+  }
+
+  .agent-page h1{
+    text-align: center;
   }
   
   .agent-list {
@@ -15,7 +19,7 @@
   
   .agent-card {
     margin-bottom: 10px;
-    background-color: #7cc257;
+    background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -24,7 +28,7 @@
     display: flex;
     flex-direction: row;
     padding: 10px;
-    color: #fff;
+    color: #222;
     justify-content: space-between;
   }
   
@@ -36,7 +40,7 @@
   .agent-info p {
     margin: 0;
     font-size: 1.2rem;
-    color: #fff;
+    color: #222;
     margin-bottom: 10px;
   }
   

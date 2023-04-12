@@ -79,11 +79,10 @@ const cardsData = [
     quantity: "15",
   },
   {
-    id: 10,
-    title: "Carrot",
-    quantity: "12",
+    id: 8,
+    title: "Apple",
+    quantity: "5",
   },
-  
 ];
 
 const Cards = () => {

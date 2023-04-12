@@ -31,12 +31,15 @@ const orders = [
     orderNumber: "89790",
     details: "Vegetables",
   },
+  {
+    orderNumber: "867637",
+    details: "Fruits",
+  },
 ];
 
 const QueuePage = () => {
   return (
     <div className="queue-page">
-      <h1>Order Queue</h1>
       <div className="order-row">
         <div className="order-row-title">Order Number</div>
         <div className="order-row-title">Items</div>
