@@ -6,9 +6,6 @@ function Navbar() {
   return (
     <div className="navbar-container">
       <h1>Inventory/Stock</h1>
-      <div className="side">
-          <AiOutlineBars size={30} style={{ color: "black" }} />
-        </div>
     </div>
   );
 }
